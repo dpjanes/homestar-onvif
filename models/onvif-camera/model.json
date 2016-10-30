@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "@base": "file:///onvif",
+    "@vocab": "file:///onvif#",
+    "iot": "https://iotdb.org/pub/iot#",
+    "iot-purpose": "https://iotdb.org/pub/iot-purpose#",
+    "iot:purpose": {
+      "@id": "https://iotdb.org/pub/iot#purpose",
+      "@type": "@id"
+    },
+    "iot:type": {
+      "@id": "https://iotdb.org/pub/iot#type",
+      "@type": "@id"
+    },
+    "schema": "http://schema.org/"
+  },
+  "@id": "",
+  "@type": "iot:Model",
+  "iot:attribute": [
+    {
+      "@id": "#on",
+      "@type": "iot:Attribute",
+      "iot:actuator": false,
+      "iot:purpose": "iot-purpose:on",
+      "iot:read": true,
+      "iot:sensor": true,
+      "iot:type": "iot:type.boolean",
+      "iot:write": false,
+      "schema:name": "on"
+    }
+  ],
+  "iot:model-id": "onvif",
+  "schema:description": "ONVIF",
+  "schema:name": "ONVIF"
+}
